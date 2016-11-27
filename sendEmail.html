@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js">
+   <head>
+      <title>
+      Email Sender</tittle>
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("paste your user id here");
+         })();
+      </script>
+   </head>
+   <body>
+      <form id="myform" onsubmit="emailjs.sendForm('gmail', 'sampletemplate1', this); return false;" method="post">
+         <label>email</label>
+         <input type="text" name="email" />
+         <br><br>
+         <button>
+         Send
+         </button>
+      </form>
+   </body>
+</html>
